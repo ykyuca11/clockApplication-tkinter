@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
 from datetime import datetime, timedelta
+import winsound
+
+
 
 
 class SaatUygulamasi:
@@ -37,7 +40,7 @@ class SaatUygulamasi:
         self.sayac_label.pack(pady=20)
         self.sayac_giris = tk.Entry(self.sayac_frame, width=10, font=("Helvetica", 24))
         self.sayac_giris.pack(pady=10)
-        self.sayac_button = tk.Button(self.sayac_frame, text="Sayaç Ayarla", command=self.sayac_ayarla,
+        self.sayac_button = tk.Button(self.sayac_frame, text="Sayaç Başla", command=self.sayac_ayarla,
                                       font=("Helvetica", 24))
         self.sayac_button.pack(pady=10)
         self.sayac_durdur_button = tk.Button(self.sayac_frame, text="Sayaç Durdur", command=self.sayac_durdur,
@@ -85,6 +88,7 @@ class SaatUygulamasi:
             self.root.after(1000, self.sayac_baslat)
         else:
             self.sayac_label.config(text="Sayaç: Süre Doldu")
+            winsound.Beep(1000, 1000)
 
     def sayac_durdur(self):
         self.sayac_durumu = False
@@ -125,6 +129,7 @@ class SaatUygulamasi:
             else:
                 self.zamanlayici_label.config(text="Zamanlayıcı: Süre Doldu")
                 self.zamanlayici_durumu = False
+                winsound.Beep(1000, 1000)
 
     def zamanlayici_durdur(self):
         self.zamanlayici_durumu = False
