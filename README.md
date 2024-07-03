@@ -8,9 +8,9 @@ this is regular application that made with tkinter
 
 ### **tkinter:**
 
-https://docs.python.org/3/library/tkinter.html
-
 >pip install tk-tools
+
+https://docs.python.org/3/library/tkinter.html
 
 ### **date time:**
 
