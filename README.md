@@ -6,21 +6,21 @@ this is regular application that made with tkinter
 
 ## Requirements
 
-**tkinter:**
+### **tkinter:**
 
 https://docs.python.org/3/library/tkinter.html
 
 >pip install tk-tools
 
-**date time:**
+### **date time:**
 
 https://docs.python.org/3/library/datetime.html
 
-**win sound:**
+### **win sound:**
 
 https://docs.python.org/3/library/winsound.html
 
-**pyinstaller (optional):**
+### **pyinstaller (optional):**
 
 >pip install pyinstall
 
